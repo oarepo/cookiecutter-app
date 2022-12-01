@@ -1,0 +1,51 @@
+{%- extends config.BASE_TEMPLATE %}
+
+
+{%- block javascript %}
+    {{ super() }}
+    {{ webpack['oarepo_ui.js'] }}
+    {{ webpack['oarepo_ui_search.js'] }}
+{%- endblock %}
+
+{%- set title = _("OARepo UI Test Page") %}
+
+{%- block page_body %}
+
+  {%- block intro_section %}
+  {%- endblock intro_section %}
+
+  {%- block top_banner %}
+  {%- endblock top_banner %}
+
+  {%- block grid_section %}
+    <div class="ui stackable grid container rel-mt-2">
+
+      {% block main_column %}
+        <div class="eleven wide computer sixteen wide tablet column">
+
+          {% block main_column_content %}
+            <h1>Records</h1>
+            <div class="ui container">
+              <div data-invenio-search-config='{{ search_app_oarepo_config(app_id="oarepo-search") | tojson }}'></div>
+            </div>
+          {% endblock main_column_content %}
+
+        </div>
+      {% endblock main_column %}
+
+      {% block side_column %}
+        <aside class="five wide computer sixteen wide tablet column">
+
+          {% block side_column_content %}
+            <h2>Filters</h2>
+          {% endblock side_column_content %}
+
+        </aside>
+      {% endblock side_column %}
+    </div>
+  {%- endblock grid_section %}
+
+  {%- block bottom_section %}
+  {%- endblock bottom_section %}
+
+{%- endblock page_body %}
