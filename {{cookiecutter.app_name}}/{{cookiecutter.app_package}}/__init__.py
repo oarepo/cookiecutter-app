@@ -3,6 +3,7 @@
 # https://opensource.org/licenses/MIT
 
 from .ext import {{ cookiecutter.ext_name }}
-from .version import __version__
+
+__version__ = '1.0.0'
 
 __all__ = ('__version__', '{{cookiecutter.ext_name}}')
