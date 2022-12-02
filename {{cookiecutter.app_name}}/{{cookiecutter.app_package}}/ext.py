@@ -11,6 +11,7 @@ import re
 class {{cookiecutter.ext_name}}:
     def __init__(self, app=None):
         if app:
+            self.init_config(app)
             self.init_app(app)
             self.init_resource(app)
 

@@ -5,3 +5,4 @@ class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     detail_template = "{{cookiecutter.app_package}}/detail.html"
     search_template = "{{cookiecutter.app_package}}/search.html"
     url_prefix = "{{cookiecutter.url_prefix}}"
+    blueprint_name = "{{cookiecutter.app_name}}"
