@@ -21,8 +21,6 @@ class {{cookiecutter.ext_name}}:
     def init_resource(self, app):
         """Initialize vocabulary resources."""
         self.resource = obj_or_import_string(app.config["{{cookiecutter.app_package | upper}}_RESOURCE"])(
-            api_config=obj_or_import_string(app.config["{{cookiecutter.app_package | upper}}_RESOURCE_API_CONFIG"])(),
-            service=obj_or_import_string(app.config["{{cookiecutter.app_package | upper}}_RESOURCE_API_SERVICE"]),
             config=obj_or_import_string(app.config["{{cookiecutter.app_package | upper}}_RESOURCE_CONFIG"])(),
         )
 

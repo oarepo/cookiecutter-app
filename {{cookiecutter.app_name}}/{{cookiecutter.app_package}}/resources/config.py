@@ -1,5 +1,4 @@
 from oarepo_ui.resources.config import RecordsUIResourceConfig
-from .serializers import UIJSONSerializer
 
 class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     template_folder = "../theme/templates"
@@ -7,4 +6,5 @@ class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     search_template = "{{cookiecutter.app_package}}/search.html"
     url_prefix = "{{cookiecutter.url_prefix}}"
     blueprint_name = "{{cookiecutter.app_name}}"
-    ui_serializer_class = UIJSONSerializer
+    ui_serializer_class = "{{cookiecutter.ui_serializer_class}}"
+    api_service = "{{cookiecutter_api_service}}"
