@@ -10,12 +10,10 @@
   "repository_url": "",
   "resource": "{{cookiecutter.model_package | snail_to_title }}Resource",
   "resource_config": "{{cookiecutter.model_package | snail_to_title }}ResourceConfig",
-  "api_config": "{{cookiecutter.model_package }}.services.ServiceConfig",
-  "api_service": "{{cookiecutter.model_package }}.proxies.current_service",
+  "api_service": "",
+  "ui_serializer_class": "",
   "url_prefix": "/{{cookiecutter.model_name}}/",
 
   "_extensions": ["local_extensions.snail_to_title"],
-  "_copy_without_render": [
-        "*.html"
-    ]
+  "_copy_without_render": ["*.html"]
 }
