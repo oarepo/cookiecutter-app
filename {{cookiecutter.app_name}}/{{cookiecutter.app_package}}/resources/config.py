@@ -7,7 +7,7 @@ class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     ui_serializer_class = "{{cookiecutter.ui_serializer_class}}"
     api_service = "{{cookiecutter.api_service}}"
 
-    layouts = {
+    templates = {
         "detail": {
             "layout": "oarepo_ui/generic_detail.html.jinja2",
             "blocks": {"record_main_content": "{{cookiecutter.app_package}}/main.html"},
