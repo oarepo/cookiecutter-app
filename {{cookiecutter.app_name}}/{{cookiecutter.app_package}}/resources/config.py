@@ -6,6 +6,7 @@ class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     blueprint_name = "{{cookiecutter.app_name}}"
     ui_serializer_class = "{{cookiecutter.ui_serializer_class}}"
     api_service = "{{cookiecutter.api_service}}"
+    layout = "{{cookiecutter.api_service}}"
 
     templates = {
         "detail": {
