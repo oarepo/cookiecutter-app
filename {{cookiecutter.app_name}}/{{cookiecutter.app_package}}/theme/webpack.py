@@ -7,6 +7,7 @@ theme = WebpackThemeBundle(
     themes={
         "semantic-ui": dict(
             entry={
+                "{{cookiecutter.app_package}}_components": "./js/{{cookiecutter.app_package}}/custom-components.js"
             },
             dependencies={
             },

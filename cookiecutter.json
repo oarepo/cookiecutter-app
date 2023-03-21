@@ -14,6 +14,5 @@
   "ui_serializer_class": "",
   "url_prefix": "/{{cookiecutter.model_name}}/",
 
-  "_extensions": ["local_extensions.snail_to_title"],
-  "_copy_without_render": ["*.html"]
+  "_extensions": ["local_extensions.snail_to_title"]
 }
