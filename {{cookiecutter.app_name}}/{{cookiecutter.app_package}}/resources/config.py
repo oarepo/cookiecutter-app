@@ -11,7 +11,10 @@ class {{cookiecutter.resource_config}}(RecordsUIResourceConfig):
     templates = {
         "detail": {
             "layout": "{{cookiecutter.app_package}}/detail.html",
-            "blocks": {"record_main_content": "{{cookiecutter.app_package}}/main.html"},
+            "blocks": {
+                "record_main_content": "{{cookiecutter.app_package}}/main.html",
+                "record_sidebar": "{{cookiecutter.app_package}}/sidebar.html"                
+            },
         },
         "search": {"layout": "oarepo_ui/search.html.jinja2"},
     }
